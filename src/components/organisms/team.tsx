@@ -34,10 +34,10 @@ const teamMembers = [
 
 const JoinTeamCard = () => (
   <div className="bg-white rounded-2xl flex flex-col items-start justify-center p-6 w-full max-w-xs mx-auto h-full min-h-[320px]">
-    <div className="text-[#3A0E6D] text-2xl font-extrabold mb-6 text-left" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+    <div className="text-teal-950 text-2xl font-extrabold mb-6 text-left" style={{ fontFamily: 'Montserrat, sans-serif' }}>
       Interested to join our team ?
     </div>
-    <a href="https://www.linkedin.com/company/mvprockets/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#E74177] text-xl font-semibold mt-2 text-left" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+    <a href="https://www.linkedin.com/company/mvprockets/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-teal-800 text-xl font-semibold mt-2 text-left" style={{ fontFamily: 'Montserrat, sans-serif' }}>
       Apply now <span className="text-2xl">→</span>
     </a>
   </div>

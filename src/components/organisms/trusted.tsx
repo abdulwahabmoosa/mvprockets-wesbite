@@ -1,4 +1,3 @@
-"use client"
 import React, { useState, useRef, useEffect } from 'react';
 
 const brandLogos = [
@@ -121,7 +120,7 @@ export const Trusted = ({ variant = 'home' }: TrustedProps) => {
           smallHeader: 'LEADING BRANDS',
           bigHeader: 'Our Clients',
           copy: "We've helped over 100 businesses kick start their journey. And they love working with us!",
-          bgColor: 'bg-[#FCFCFC]',
+          bgColor: 'bg-teal-50',
           carouselContainerStyle: ''
         };
       case 'services':
@@ -129,15 +128,15 @@ export const Trusted = ({ variant = 'home' }: TrustedProps) => {
           smallHeader: 'TRUSTED BY',
           bigHeader: 'Leading Brands',
           copy: "We've helped over 100+ businesses go to the market with amazing products we helped them build. And everytime, our clients, and the market just loved it!",
-          bgColor: 'bg-[#FCF3F6]',
-          carouselContainerStyle: 'bg-white rounded-lg border border-[#E74177]/20 p-4'
+          bgColor: 'bg-teal-50',
+          carouselContainerStyle: 'bg-white rounded-lg border border-teal-800/20 p-4'
         };
       default: // home
         return {
           smallHeader: 'TRUSTED BY',
           bigHeader: 'Leading Brands',
           copy: "We've helped over 100+ businesses go to the market with amazing products we helped them build. And everytime, our clients, and the market just loved it!",
-          bgColor: 'bg-[#FCFCFC]',
+          bgColor: 'bg-teal-50',
           carouselContainerStyle: ''
         };
     }
@@ -149,22 +148,22 @@ export const Trusted = ({ variant = 'home' }: TrustedProps) => {
     <section className={`w-full py-12 px-2 md:px-0 ${content.bgColor}`}>
       <div className="max-w-5xl mx-auto flex flex-col items-center">
         <div className="text-center mb-8">
-          <div className="text-[#E74177] text-base md:text-2xl font-semibold tracking-widest mb-2" style={{ letterSpacing: 2 }}>{content.smallHeader}</div>
-          <h2 className="text-4xl md:text-6xl font-extrabold text-[#3A0E6D] mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>{content.bigHeader}</h2>
+          <div className="text-teal-800 text-base md:text-2xl font-semibold tracking-widest mb-2" style={{ letterSpacing: 2 }}>{content.smallHeader}</div>
+          <h2 className="text-4xl md:text-6xl font-extrabold text-teal-950 mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>{content.bigHeader}</h2>
           {variant !== 'home' && (
-            <p className="text-gray-700 text-lg md:text-xl max-w-3xl mx-auto">{content.copy}</p>
+            <p className="text-teal-950 text-lg md:text-xl max-w-3xl mx-auto">{content.copy}</p>
           )}
         </div>
         {/* Brand Logos Carousel */}
         <div className="relative w-full flex items-center justify-center mb-8">
           {/* Left Arrow */}
           <button
-            className="absolute left-0 md:-left-16 z-20 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg hover:bg-[#FCE4EC] transition-colors disabled:opacity-40"
+            className="absolute left-0 md:-left-16 z-20 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg hover:bg-teal-100 transition-colors disabled:opacity-40"
             onClick={goLeft}
             aria-label="Previous"
             disabled={isSliding}
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#E74177" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#0E5964" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </button>
           {/* Carousel Container */}
           <div
@@ -205,17 +204,17 @@ export const Trusted = ({ variant = 'home' }: TrustedProps) => {
           </div>
           {/* Right Arrow */}
           <button
-            className="absolute right-0 md:-right-16 z-20 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg hover:bg-[#FCE4EC] transition-colors disabled:opacity-40"
+            className="absolute right-0 md:-right-16 z-20 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg hover:bg-teal-100 transition-colors disabled:opacity-40"
             onClick={goRight}
             aria-label="Next"
             disabled={isSliding}
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#E74177" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#0E5964" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </button>
         </div>
-        <hr className="w-full border-t border-gray-200 my-8" />
+        <hr className="w-full border-t border-line my-8" />
         <div className="text-center mb-6">
-          <h3 className="text-xl md:text-2xl font-bold text-[#3A0E6D] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h3 className="text-xl md:text-2xl font-bold text-teal-950 mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             Some of the best investors have backed our startups/clients
           </h3>
         </div>

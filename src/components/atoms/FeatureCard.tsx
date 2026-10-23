@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 
 export type FeatureCardProps = {
@@ -17,7 +16,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   title,
   subheader,
   text,
-  iconBg = "bg-[#E74177]",
+  iconBg = "bg-teal-800",
   iconClassName = "",
   className = "",
   style = {},
@@ -32,9 +31,9 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
         : icon}
     </div>
     <div className="w-full">
-      <h3 className="text-2xl md:text-xl font-semibold text-[#3A0E6D] mb-1 md:mb-2 text-left" style={{ fontFamily: 'Montserrat, sans-serif' }}>{title}</h3>
-      {subheader && <div className="text-lg font-semibold mb-1 text-[#E74177] font-sans">{subheader}</div>}
-      <p className="text-base font-normal md:text-base text-gray-500 leading-snug md:leading-snug text-left">{text}</p>
+      <h3 className="text-2xl md:text-xl font-semibold text-teal-950 mb-1 md:mb-2 text-left" style={{ fontFamily: 'Montserrat, sans-serif' }}>{title}</h3>
+      {subheader && <div className="text-lg font-semibold mb-1 text-teal-800 font-sans">{subheader}</div>}
+      <p className="text-base font-normal md:text-base text-muted leading-snug md:leading-snug text-left">{text}</p>
     </div>
   </div>
 );

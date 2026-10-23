@@ -1,4 +1,3 @@
-"use client";
 import { useEffect } from "react";
 import { HeroSection } from '@/components/organisms/HeroSection';
 import { Stats } from '@/components/organisms/Stats';
@@ -15,7 +14,7 @@ import Faq from '@/components/organisms/faq';
 
 export default function Home() {
   useEffect(() => {
-    if (typeof window !== "undefined" && window.location.hash) {
+    if (window.location.hash) {
       const el = document.getElementById(window.location.hash.replace('#', ''));
       if (el) {
         setTimeout(() => {

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&family=Montserrat:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-teal-50:  #EEF6F7; /* page background tint */
+  --color-teal-100: #D5ECEE; /* light tint, selected/hover surfaces */
+  --color-teal-300: #7CC4CA; /* accents and links on dark surfaces */
+  --color-teal-500: #2E95A0; /* secondary data, decorative accents */
+  --color-teal-700: #1F7A85; /* hover state for primary */
+  --color-teal-800: #0E5964; /* BRAND primary: buttons, links, highlights */
+  --color-teal-900: #0E3B40; /* text on light teal, dark cards */
+  --color-teal-950: #0B2A2E; /* darkest: dark sections, headings/ink */
+  --color-purple-50:  #EEE8F7; /* purple tint */
+  --color-purple-600: #6E4BA8; /* supporting hue, used sparingly */
+  --color-line: #D8E5E6;        /* card borders, dividers */
+  --color-line-strong: #BFD0D2; /* input borders */
+  --color-nav-text: #B9D3D6;    /* soft text on dark surfaces */
+  --color-nav-line: #1B4247;    /* dividers on dark surfaces */
+  --color-muted: #4F5B61;       /* secondary text */
+  --color-subtle: #5F6A70;      /* tertiary text */
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #0B2A2E;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  --font-monster: "Montserrat", "sans-serif"; 
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0B2A2E;
+    --foreground: #EEF6F7;
+  }
+}
+
+body {
+  /* background: var(--background); */
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}

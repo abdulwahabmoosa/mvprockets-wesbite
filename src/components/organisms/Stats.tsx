@@ -1,4 +1,3 @@
-"use client"
 import React, { useState, useEffect } from 'react';
 
 const stats = [
@@ -56,7 +55,7 @@ export const Stats: React.FC = () => {
   return (
     <section 
       id="stats-section"
-      className="w-full bg-[#3A0E6D] py-8 md:py-6"
+      className="w-full bg-teal-950 py-8 md:py-6"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-4">
         {/* Desktop: Horizontal Layout */}

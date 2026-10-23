@@ -1,4 +1,3 @@
-"use client"
 import React, { useState, useEffect } from 'react';
 
 const navLinks = [
@@ -49,7 +48,7 @@ export const Navbar = () => {
           hideBorder ? 'opacity-0' : 'opacity-100'
         }`}
         style={{
-          background: 'linear-gradient(90deg, #E74177, #3A0E6D, #E74177, #3A0E6D)',
+          background: 'linear-gradient(90deg, #0E5964, #0B2A2E, #0E5964, #0B2A2E)',
           backgroundSize: '200% 100%',
           animation: 'gradientShift 3s ease-in-out infinite',
         }}
@@ -77,7 +76,7 @@ export const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-[#3A0E6D] text-lg font-medium hover:text-[#E74177] transition-colors duration-200"
+              className="text-teal-950 text-lg font-medium hover:text-teal-800 transition-colors duration-200"
               style={{ fontFamily: 'Montserrat, sans-serif' }}
             >
               {link.label}
@@ -85,7 +84,7 @@ export const Navbar = () => {
           ))}
           <a
             href="/contact-us"
-            className="bg-[#E74177] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#d63569] transition-colors duration-200 ml-4"
+            className="bg-teal-800 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-teal-700 transition-colors duration-200 ml-4"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
             Contact Us
@@ -97,9 +96,9 @@ export const Navbar = () => {
           onClick={() => setOpen(true)}
           aria-label="Open menu"
         >
-          <span className="w-8 h-0.5 bg-gray-400 rounded"></span>
-          <span className="w-8 h-0.5 bg-gray-400 rounded"></span>
-          <span className="w-8 h-0.5 bg-gray-400 rounded"></span>
+          <span className="w-8 h-0.5 bg-subtle rounded"></span>
+          <span className="w-8 h-0.5 bg-subtle rounded"></span>
+          <span className="w-8 h-0.5 bg-subtle rounded"></span>
         </button>
       </nav>
       
@@ -121,7 +120,7 @@ export const Navbar = () => {
             }}
           >
             <button
-              className="absolute top-6 right-6 text-2xl text-gray-500 hover:text-gray-700"
+              className="absolute top-6 right-6 text-2xl text-muted hover:text-teal-950"
               onClick={() => setOpen(false)}
               aria-label="Close menu"
             >
@@ -132,7 +131,7 @@ export const Navbar = () => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="block border-b border-gray-200 py-6 text-[#3A0E6D] text-lg font-medium hover:text-[#E74177] transition-colors"
+                  className="block border-b border-line py-6 text-teal-950 text-lg font-medium hover:text-teal-800 transition-colors"
                   style={{ fontFamily: 'Montserrat, sans-serif' }}
                   onClick={() => setOpen(false)}
                 >
@@ -141,7 +140,7 @@ export const Navbar = () => {
               ))}
               <a
                 href="/contact-us"
-                className="mt-6 w-full bg-[#E74177] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-[#d63569] transition-colors text-center block"
+                className="mt-6 w-full bg-teal-800 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-teal-700 transition-colors text-center block"
                 style={{ fontFamily: 'Montserrat, sans-serif' }}
                 onClick={() => setOpen(false)}
               >
@@ -151,17 +150,6 @@ export const Navbar = () => {
           </div>
         </>
       )}
-      {/* Keyframes for gradient animation */}
-      <style jsx>{`
-        @keyframes gradientShift {
-          0%, 100% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-        }
-      `}</style>
     </>
   );
 }; 

@@ -33,25 +33,25 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
       {/* Closed state */}
       <button
         type="button"
-        className={`w-full flex items-center justify-between px-3 py-2 md:py-3 rounded-lg border border-gray-200 bg-white text-sm md:text-base text-left font-normal focus:outline-none focus:ring-2 focus:ring-[#E74177]/40 transition-all ${open ? 'ring-2 ring-[#E74177]/40' : ''}`}
-        style={{ color: '#3A0E6D', fontWeight: 400 }}
+        className={`w-full flex items-center justify-between px-3 py-2 md:py-3 rounded-lg border border-line bg-white text-sm md:text-base text-left font-normal focus:outline-none focus:ring-2 focus:ring-teal-800/40 transition-all ${open ? 'ring-2 ring-teal-800/40' : ''}`}
+        style={{ color: '#0B2A2E', fontWeight: 400 }}
         onClick={() => setOpen((o) => !o)}
         aria-haspopup="listbox"
         aria-expanded={open}
       >
-        <span className={value ? 'font-normal' : 'text-[#3A0E6D] font-normal'} style={{ fontWeight: 400 }}>
+        <span className={value ? 'font-normal' : 'text-teal-950 font-normal'} style={{ fontWeight: 400 }}>
           {value || placeholder}
         </span>
-        <svg className={`w-5 h-5 ml-2 transition-transform ${open ? 'rotate-180' : ''} text-[#9CA3AF]`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className={`w-5 h-5 ml-2 transition-transform ${open ? 'rotate-180' : ''} text-subtle`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
         </svg>
       </button>
       {/* Dropdown menu */}
       {open && (
-        <div className="absolute z-30 mt-2 w-full bg-white rounded-xl shadow-lg border border-gray-100 py-2">
+        <div className="absolute z-30 mt-2 w-full bg-white rounded-xl shadow-lg border border-line py-2">
           <button
             type="button"
-            className={`w-full text-left px-4 py-2 text-[#3A0E6D] text-sm md:text-base font-normal hover:bg-[#F3F4F6] transition-colors`}
+            className={`w-full text-left px-4 py-2 text-teal-950 text-sm md:text-base font-normal hover:bg-teal-50 transition-colors`}
             style={{ fontWeight: 400, fontFamily: 'Montserrat, sans-serif' }}
             onClick={() => {
               onChange("");
@@ -64,7 +64,7 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
             <button
               type="button"
               key={option}
-              className={`w-full text-left px-4 py-2 text-[#3A0E6D] text-sm md:text-base font-normal hover:bg-[#F3F4F6] transition-colors`}
+              className={`w-full text-left px-4 py-2 text-teal-950 text-sm md:text-base font-normal hover:bg-teal-50 transition-colors`}
               style={{ fontWeight: 400, fontFamily: 'Montserrat, sans-serif' }}
               onClick={() => {
                 onChange(option);

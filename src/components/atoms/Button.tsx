@@ -36,8 +36,8 @@ export const Button = ({
 
   // Primary vs secondary variants
   const variant = primary
-    ? 'bg-indigo-600 hover:bg-indigo-700 text-white focus:ring-indigo-500'
-    : 'shadow-inner bg-transparent text-gray-800 focus:ring-gray-400'
+    ? 'bg-teal-800 hover:bg-teal-950 text-white focus:ring-teal-800'
+    : 'shadow-inner bg-transparent text-teal-950 focus:ring-line-strong'
 
   // Size scale approximated from your px/font‑size values
   const sizes: Record<string,string> = {

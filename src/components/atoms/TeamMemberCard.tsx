@@ -17,8 +17,8 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ image, name, role, prof
         style={{ maxHeight: 500, minHeight: 220 }}
       />
       <div className="w-full">
-        <div className="text-[#3A0E6D] text-xl font-extrabold mb-1 text-left" style={{ fontFamily: 'Montserrat, sans-serif' }}>{name}</div>
-        <div className="text-gray-500 text-base font-medium text-left" style={{ fontFamily: 'Montserrat, sans-serif' }}>{role}</div>
+        <div className="text-teal-950 text-xl font-extrabold mb-1 text-left" style={{ fontFamily: 'Montserrat, sans-serif' }}>{name}</div>
+        <div className="text-muted text-base font-medium text-left" style={{ fontFamily: 'Montserrat, sans-serif' }}>{role}</div>
       </div>
     </div>
   </a>

@@ -1,5 +1,5 @@
 import React from 'react';
-import NextLink, { LinkProps } from 'next/link';
+import { Link as RouterLink } from 'react-router-dom';
 
 interface LinkAtomProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   href: string;
@@ -8,15 +8,14 @@ interface LinkAtomProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
 }
 
 const Link: React.FC<LinkAtomProps> = ({ href, children, className = '', ...rest }) => (
-  <NextLink href={href} passHref legacyBehavior>
-    <a
-      className={`text-[#3A0E6D] hover:underline transition-colors text-base md:text-lg font-medium ${className}`}
-      {...rest}
-      data-testid="link-atom"
-    >
-      {children}
-    </a>
-  </NextLink>
+  <RouterLink
+    to={href}
+    className={`text-teal-950 hover:underline transition-colors text-base md:text-lg font-medium ${className}`}
+    {...rest}
+    data-testid="link-atom"
+  >
+    {children}
+  </RouterLink>
 );
 
-export default Link; 
+export default Link;

@@ -1,4 +1,3 @@
-"use client"
 import React, { useState } from 'react';
 
 const faqs = [
@@ -52,26 +51,26 @@ const Faq = () => {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 md:gap-16 px-4 md:px-8 items-start">
         {/* Left: Section Header and Copy */}
         <div className="flex-1 flex flex-col items-start justify-center max-w-xl w-full mb-8 md:mb-0">
-          <div className="text-[#E74177] text-lg font-semibold tracking-widest mb-2 uppercase" style={{ letterSpacing: 2 }}>
+          <div className="text-teal-800 text-lg font-semibold tracking-widest mb-2 uppercase" style={{ letterSpacing: 2 }}>
             Some
           </div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#3A0E6D] mb-4 md:mb-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-teal-950 mb-4 md:mb-16" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             Frequently Asked<br />Questions
           </h2>
-          <p className="text-gray-600 text-lg md:text-xl mb-8" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <p className="text-muted text-lg md:text-xl mb-8" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             As seasoned innovators and technology pioneers, we partner in your success, driving digital transformation and advancing your business through cutting-edge solutions and strategic insights.
           </p>
-          <button className="bg-[#E74177] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#d63569] transition-colors duration-200" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <button className="bg-teal-800 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-teal-700 transition-colors duration-200" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             Ask any Question
           </button>
         </div>
         {/* Right: FAQ List */}
-        <div className="flex-1 w-full max-w-2xl bg-white rounded-2xl shadow-md border border-gray-100 pt-2 pb-4 px-0 md:px-0" style={{ boxShadow: '0 4px 32px 0 rgba(231,65,119,0.07)' }}>
-          <div className="h-2 w-full rounded-t-2xl bg-gradient-to-r from-[#E74177] to-[#fff] mb-2" />
+        <div className="flex-1 w-full max-w-2xl bg-white rounded-2xl shadow-md border border-line pt-2 pb-4 px-0 md:px-0" style={{ boxShadow: '0 4px 32px 0 rgba(14,89,100,0.07)' }}>
+          <div className="h-2 w-full rounded-t-2xl bg-gradient-to-r from-teal-800 to-[#fff] mb-2" />
           {faqs.map((faq, idx) => (
-            <div key={idx} className="border-b border-gray-200 last:border-b-0">
+            <div key={idx} className="border-b border-line last:border-b-0">
               <button
-                className={`w-full text-left px-6 py-5 focus:outline-none flex items-center justify-between transition-colors ${open[idx] ? 'text-[#E74177] font-bold bg-[#FFF0F6]' : 'text-[#3A0E6D] font-semibold bg-white hover:bg-gray-50'}`}
+                className={`w-full text-left px-6 py-5 focus:outline-none flex items-center justify-between transition-colors ${open[idx] ? 'text-teal-800 font-bold bg-teal-50' : 'text-teal-950 font-semibold bg-white hover:bg-teal-50'}`}
                 onClick={() => toggle(idx)}
                 aria-expanded={open[idx]}
                 aria-controls={`faq-panel-${idx}`}
@@ -80,7 +79,7 @@ const Faq = () => {
                 <svg
                   className={`ml-4 transition-transform duration-300 ${open[idx] ? 'rotate-180' : ''}`}
                   width="24" height="24" viewBox="0 0 24 24" fill="none"
-                  stroke={open[idx] ? '#E74177' : '#3A0E6D'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                  stroke={open[idx] ? '#0E5964' : '#0B2A2E'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                 >
                   <polyline points="6 9 12 15 18 9" />
                 </svg>
@@ -88,7 +87,7 @@ const Faq = () => {
               {open[idx] && (
                 <div
                   id={`faq-panel-${idx}`}
-                  className="px-6 pb-6 text-gray-700 text-base md:text-lg whitespace-pre-line"
+                  className="px-6 pb-6 text-teal-950 text-base md:text-lg whitespace-pre-line"
                   style={{ fontFamily: 'Montserrat, sans-serif' }}
                 >
                   {faq.answer}

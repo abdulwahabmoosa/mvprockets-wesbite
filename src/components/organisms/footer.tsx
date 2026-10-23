@@ -1,4 +1,3 @@
-"use client"
 import React, { useState } from 'react';
 
 const quickLinks = [
@@ -61,29 +60,29 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full bg-[#191A2A] text-white pt-12 pb-0">
+    <footer className="w-full bg-teal-900 text-white pt-12 pb-0">
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-y-8 md:gap-y-0 md:gap-12 md:justify-between">
         {/* Left: Logo and Description */}
         <div className="flex-1 min-w-[220px] flex flex-col gap-4 md:gap-6 mb-8 md:mb-0">
           <div className="flex items-center gap-3 mb-2">
             <img src="/mvprockets-logo.svg" alt="MVPROCKETS Logo" className="h-16 w-auto" />
           </div>
-          <div className="text-gray-300 text-base md:text-lg max-w-xs md:max-w-sm" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <div className="text-nav-text text-base md:text-lg max-w-xs md:max-w-sm" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             Empowering startups & enterprises to turn vision into reality with rapid, scalable product development and amazing support.
           </div>
-          <div className="text-gray-300 text-base mt-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <div className="text-nav-text text-base mt-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             Wyoming, USA<br />Bangalore, India
           </div>
         </div>
         {/* Center: Quick Links */}
         <div className="flex-1 min-w-[180px] flex flex-col gap-2 mb-6 md:mb-0">
-          <div className="text-gray-400 text-lg font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Quick Links</div>
+          <div className="text-nav-text text-lg font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Quick Links</div>
           <ul className="flex flex-col gap-1">
             {quickLinks.map(link => (
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="text-white hover:text-[#E74177] transition-colors duration-200 text-base md:text-lg font-medium mb-2"
+                  className="text-white hover:text-teal-300 transition-colors duration-200 text-base md:text-lg font-medium mb-2"
                   style={{ fontFamily: 'Montserrat, sans-serif' }}
                 >
                   {link.label}
@@ -94,18 +93,18 @@ const Footer = () => {
         </div>
         {/* Right: Newsletter and Also From Us */}
         <div className="flex-1 min-w-[220px] flex flex-col gap-4 md:gap-6">
-          <div className="text-gray-400 text-lg font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Join Our Newsletter</div>
+          <div className="text-nav-text text-lg font-bold mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Join Our Newsletter</div>
           <div className="flex flex-col gap-3 w-full md:max-w-xs">
             <input
               type="email"
               value={email}
               onChange={e => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="rounded-lg px-5 py-3 text-base w-full focus:outline-none focus:ring-2 focus:ring-[#E74177] bg-white text-gray-700 placeholder-gray-400 font-medium"
+              className="rounded-lg px-5 py-3 text-base w-full focus:outline-none focus:ring-2 focus:ring-teal-300 bg-white text-teal-950 placeholder-subtle font-medium"
             />
             <button
               onClick={handleSubmit}
-              className="bg-[#E74177] text-white px-5 py-3 rounded-lg text-base font-semibold hover:bg-[#d63569] transition-colors duration-200 w-full"
+              className="bg-teal-800 text-white px-5 py-3 rounded-lg text-base font-semibold hover:bg-teal-700 transition-colors duration-200 w-full"
               style={{ fontFamily: 'Montserrat, sans-serif' }}
             >
               Receive Newsletter
@@ -114,13 +113,13 @@ const Footer = () => {
               <div className="text-red-500 text-xs mt-1">{error}</div>
             )}
           </div>
-          <div className="text-gray-400 text-lg font-bold mt-4 mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Also From Us</div>
+          <div className="text-nav-text text-lg font-bold mt-4 mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Also From Us</div>
           <ul className="flex flex-col gap-1">
             {alsoFromUs.map(link => (
               <li key={link.label}>
                 <a
                   href={link.href}
-                  className="text-white hover:text-[#E74177] transition-colors duration-200 text-base md:text-lg font-medium"
+                  className="text-white hover:text-teal-300 transition-colors duration-200 text-base md:text-lg font-medium"
                   style={{ fontFamily: 'Montserrat, sans-serif' }}
                 >
                   {link.label}
@@ -131,15 +130,15 @@ const Footer = () => {
         </div>
       </div>
       {/* Bottom Bar with darker background */}
-      <div className="w-full bg-[#0D0D18] mt-10 pt-6 pb-4">
+      <div className="w-full bg-teal-950 mt-10 pt-6 pb-4">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-sm text-gray-400">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-sm text-nav-text">
             <div className="flex flex-wrap gap-4 items-center justify-center md:justify-start">
               {legalLinks.map(link => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-white hover:text-[#E74177] transition-colors duration-200"
+                  className="text-white hover:text-teal-300 transition-colors duration-200"
                   style={{ fontFamily: 'Montserrat, sans-serif' }}
                 >
                   {link.label}
@@ -151,7 +150,7 @@ const Footer = () => {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-white hover:text-[#E74177] transition-colors duration-200"
+                  className="text-white hover:text-teal-300 transition-colors duration-200"
                   aria-label={link.label}
                 >
                   {link.icon}
@@ -159,7 +158,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="w-full text-center text-xs text-gray-400 mt-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <div className="w-full text-center text-xs text-nav-text mt-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             © 2025 MVPRockets. All rights reserved
           </div>
         </div>

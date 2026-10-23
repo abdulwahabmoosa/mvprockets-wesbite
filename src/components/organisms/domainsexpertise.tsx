@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import FeatureCard from "../atoms/FeatureCard";
 
@@ -10,11 +9,11 @@ const domains = [
     icon: (
       <>
         <svg width="48" height="40" fill="none" viewBox="0 0 48 40" className="block md:hidden">
-          <rect x="0" y="0" width="48" height="40" rx="20" fill="#E74177"/>
+          <rect x="0" y="0" width="48" height="40" rx="20" fill="#0E5964"/>
           <text x="24" y="27" textAnchor="middle" fontSize="22" fill="#fff" fontWeight="bold">💻</text>
         </svg>
         <svg width="44" height="44" fill="none" viewBox="0 0 44 44" className="hidden md:block">
-          <circle cx="22" cy="22" r="22" fill="#E74177"/>
+          <circle cx="22" cy="22" r="22" fill="#0E5964"/>
           <text x="22" y="30" textAnchor="middle" fontSize="24" fill="#fff" fontWeight="bold">💻</text>
         </svg>
       </>
@@ -27,11 +26,11 @@ const domains = [
     icon: (
       <>
         <svg width="48" height="40" fill="none" viewBox="0 0 48 40" className="block md:hidden">
-          <rect x="0" y="0" width="48" height="40" rx="20" fill="#E74177"/>
+          <rect x="0" y="0" width="48" height="40" rx="20" fill="#0E5964"/>
           <text x="24" y="27" textAnchor="middle" fontSize="22" fill="#fff" fontWeight="bold">🏪</text>
         </svg>
         <svg width="44" height="44" fill="none" viewBox="0 0 44 44" className="hidden md:block">
-          <circle cx="22" cy="22" r="22" fill="#E74177"/>
+          <circle cx="22" cy="22" r="22" fill="#0E5964"/>
           <text x="22" y="30" textAnchor="middle" fontSize="24" fill="#fff" fontWeight="bold">🏪</text>
         </svg>
       </>
@@ -44,11 +43,11 @@ const domains = [
     icon: (
       <>
         <svg width="48" height="40" fill="none" viewBox="0 0 48 40" className="block md:hidden">
-          <rect x="0" y="0" width="48" height="40" rx="20" fill="#E74177"/>
+          <rect x="0" y="0" width="48" height="40" rx="20" fill="#0E5964"/>
           <text x="24" y="27" textAnchor="middle" fontSize="22" fill="#fff" fontWeight="bold">☁️</text>
         </svg>
         <svg width="44" height="44" fill="none" viewBox="0 0 44 44" className="hidden md:block">
-          <circle cx="22" cy="22" r="22" fill="#E74177"/>
+          <circle cx="22" cy="22" r="22" fill="#0E5964"/>
           <text x="22" y="30" textAnchor="middle" fontSize="24" fill="#fff" fontWeight="bold">☁️</text>
         </svg>
       </>
@@ -61,11 +60,11 @@ const domains = [
     icon: (
       <>
         <svg width="48" height="40" fill="none" viewBox="0 0 48 40" className="block md:hidden">
-          <rect x="0" y="0" width="48" height="40" rx="20" fill="#E74177"/>
+          <rect x="0" y="0" width="48" height="40" rx="20" fill="#0E5964"/>
           <text x="24" y="27" textAnchor="middle" fontSize="22" fill="#fff" fontWeight="bold">🩺</text>
         </svg>
         <svg width="44" height="44" fill="none" viewBox="0 0 44 44" className="hidden md:block">
-          <circle cx="22" cy="22" r="22" fill="#E74177"/>
+          <circle cx="22" cy="22" r="22" fill="#0E5964"/>
           <text x="22" y="30" textAnchor="middle" fontSize="24" fill="#fff" fontWeight="bold">🩺</text>
         </svg>
       </>
@@ -78,11 +77,11 @@ const domains = [
     icon: (
       <>
         <svg width="48" height="40" fill="none" viewBox="0 0 48 40" className="block md:hidden">
-          <rect x="0" y="0" width="48" height="40" rx="20" fill="#E74177"/>
+          <rect x="0" y="0" width="48" height="40" rx="20" fill="#0E5964"/>
           <text x="24" y="27" textAnchor="middle" fontSize="22" fill="#fff" fontWeight="bold">📦</text>
         </svg>
         <svg width="44" height="44" fill="none" viewBox="0 0 44 44" className="hidden md:block">
-          <circle cx="22" cy="22" r="22" fill="#E74177"/>
+          <circle cx="22" cy="22" r="22" fill="#0E5964"/>
           <text x="22" y="30" textAnchor="middle" fontSize="24" fill="#fff" fontWeight="bold">📦</text>
         </svg>
       </>
@@ -95,11 +94,11 @@ const domains = [
     icon: (
       <>
         <svg width="48" height="40" fill="none" viewBox="0 0 48 40" className="block md:hidden">
-          <rect x="0" y="0" width="48" height="40" rx="20" fill="#E74177"/>
+          <rect x="0" y="0" width="48" height="40" rx="20" fill="#0E5964"/>
           <text x="24" y="27" textAnchor="middle" fontSize="22" fill="#fff" fontWeight="bold">🚗</text>
         </svg>
         <svg width="44" height="44" fill="none" viewBox="0 0 44 44" className="hidden md:block">
-          <circle cx="22" cy="22" r="22" fill="#E74177"/>
+          <circle cx="22" cy="22" r="22" fill="#0E5964"/>
           <text x="22" y="30" textAnchor="middle" fontSize="24" fill="#fff" fontWeight="bold">🚗</text>
         </svg>
       </>
@@ -112,11 +111,11 @@ const domains = [
     icon: (
       <>
         <svg width="48" height="40" fill="none" viewBox="0 0 48 40" className="block md:hidden">
-          <rect x="0" y="0" width="48" height="40" rx="20" fill="#E74177"/>
+          <rect x="0" y="0" width="48" height="40" rx="20" fill="#0E5964"/>
           <text x="24" y="27" textAnchor="middle" fontSize="22" fill="#fff" fontWeight="bold">💳</text>
         </svg>
         <svg width="44" height="44" fill="none" viewBox="0 0 44 44" className="hidden md:block">
-          <circle cx="22" cy="22" r="22" fill="#E74177"/>
+          <circle cx="22" cy="22" r="22" fill="#0E5964"/>
           <text x="22" y="30" textAnchor="middle" fontSize="24" fill="#fff" fontWeight="bold">💳</text>
         </svg>
       </>
@@ -129,11 +128,11 @@ const domains = [
     icon: (
       <>
         <svg width="48" height="40" fill="none" viewBox="0 0 48 40" className="block md:hidden">
-          <rect x="0" y="0" width="48" height="40" rx="20" fill="#E74177"/>
+          <rect x="0" y="0" width="48" height="40" rx="20" fill="#0E5964"/>
           <text x="24" y="27" textAnchor="middle" fontSize="22" fill="#fff" fontWeight="bold">🔧</text>
         </svg>
         <svg width="44" height="44" fill="none" viewBox="0 0 44 44" className="hidden md:block">
-          <circle cx="22" cy="22" r="22" fill="#E74177"/>
+          <circle cx="22" cy="22" r="22" fill="#0E5964"/>
           <text x="22" y="30" textAnchor="middle" fontSize="24" fill="#fff" fontWeight="bold">🔧</text>
         </svg>
       </>
@@ -157,7 +156,7 @@ export const DomainsExpertise = () => {
     }
   };
   return (
-    <section className="w-full bg-[#3A0E6D] py-16 px-4 md:px-16">
+    <section className="w-full bg-teal-950 py-16 px-4 md:px-16">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         <h2 className="text-3xl md:text-5xl font-extrabold text-white text-center mb-12" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           Domains Expertise
@@ -170,7 +169,7 @@ export const DomainsExpertise = () => {
               style={{ fontFamily: 'Montserrat, sans-serif' }}
             >
               <div className="flex-shrink-0 mr-4">
-                <div className="bg-[#E74177] w-14 h-14 rounded-[26px] md:w-12 md:h-12 md:rounded-full flex items-center justify-center">
+                <div className="bg-teal-800 w-14 h-14 rounded-[26px] md:w-12 md:h-12 md:rounded-full flex items-center justify-center">
                   <img
                     src={`/design/icons/${getIconFile(domain.title)}`}
                     alt={domain.title + ' icon'}
@@ -196,7 +195,7 @@ export const DomainsExpertise = () => {
                   style={{
                     fontSize: 16,
                     fontWeight: 600,
-                    color: '#ff7fb5',
+                    color: '#7CC4CA',
                     marginTop: -10,
                     marginBottom: 15,
                     fontFamily: 'Montserrat, sans-serif',
@@ -213,7 +212,7 @@ export const DomainsExpertise = () => {
         <div className="w-full flex flex-col items-center mt-16">
           <hr className="w-full max-w-5xl border-t border-white/50 mb-12 mt-8" />
           <div className="text-center mb-6">
-            <div className="text-[#E74177] text-lg font-semibold tracking-widest mb-2 uppercase" style={{ letterSpacing: 2 }}>
+            <div className="text-teal-300 text-lg font-semibold tracking-widest mb-2 uppercase" style={{ letterSpacing: 2 }}>
               Our Products Are Compliant & Secure
             </div>
             <h3 className="text-2xl md:text-4xl font-normal text-white mb-8" style={{ fontFamily: 'Montserrat, sans-serif' }}>

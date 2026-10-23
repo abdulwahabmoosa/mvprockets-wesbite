@@ -1,4 +1,3 @@
-"use client"
 import React, { useEffect, useState } from 'react';
 
 const animatedWords = [
@@ -48,16 +47,16 @@ export const HeroSection: React.FC = () => {
           ? 'opacity-100 translate-y-0' 
           : 'opacity-0 translate-y-16'
       }`}>
-        <h1 className="text-4xl md:text-6xl font-bold text-[#3A0E6D] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <h1 className="text-4xl md:text-6xl font-bold text-teal-950 mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           Product & GenAI Partners for
         </h1>
         <div className="flex justify-center items-baseline mb-8">
-          <h2 className="text-4xl md:text-6xl font-bold text-[#3A0E6D]" style={{ fontFamily: 'Montserrat, sans-serif' }}>the Top</h2>
+          <h2 className="text-4xl md:text-6xl font-bold text-teal-950" style={{ fontFamily: 'Montserrat, sans-serif' }}>the Top</h2>
           <div className="relative ml-8" style={{ minWidth: '300px' }}>
-            <span className="invisible text-4xl md:text-6xl font-bold text-[#E74177]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <span className="invisible text-4xl md:text-6xl font-bold text-teal-800" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               {animatedWords[wordIndex]}
             </span>
-            <span className="absolute left-0 top-0 text-4xl md:text-6xl font-bold text-[#E74177]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <span className="absolute left-0 top-0 text-4xl md:text-6xl font-bold text-teal-800" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               {displayed}
             </span>
           </div>
@@ -70,17 +69,17 @@ export const HeroSection: React.FC = () => {
           ? 'opacity-100 translate-y-0' 
           : 'opacity-0 translate-y-16'
       }`}>
-        <h1 className="text-4xl font-bold text-[#3A0E6D] mb-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <h1 className="text-4xl font-bold text-teal-950 mb-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           Product & GenAI
         </h1>
-        <h1 className="text-4xl font-bold text-[#3A0E6D] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <h1 className="text-4xl font-bold text-teal-950 mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           Partners for the Top
         </h1>
         <div className="relative w-full flex justify-center mb-8">
-          <span className="invisible text-4xl font-bold text-[#E74177]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <span className="invisible text-4xl font-bold text-teal-800" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             {animatedWords[wordIndex]}
           </span>
-          <span className="absolute left-0 top-0 w-full h-full flex justify-center items-center text-4xl font-bold text-[#E74177]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <span className="absolute left-0 top-0 w-full h-full flex justify-center items-center text-4xl font-bold text-teal-800" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             {displayed}
           </span>
         </div>
@@ -91,7 +90,7 @@ export const HeroSection: React.FC = () => {
           ? 'opacity-100 translate-y-0' 
           : 'opacity-0 translate-y-16'
       }`}>
-        <p className="text-gray-500 text-xl mt-8 mb-12 max-w-2xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <p className="text-muted text-xl mt-8 mb-12 max-w-2xl" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           Not just the bare-bone MVPs. Launch production-ready,
           <span className="hidden md:inline"><br /></span>
           <span className="inline md:hidden"> </span>
@@ -104,7 +103,7 @@ export const HeroSection: React.FC = () => {
           ? 'opacity-100 translate-y-0' 
           : 'opacity-0 translate-y-16'
       }`}>
-        <button className="bg-[#E74177] text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-pink-500 transition-colors" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <button className="bg-teal-800 text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-teal-950 transition-colors" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           Talk to an expert
         </button>
       </div>

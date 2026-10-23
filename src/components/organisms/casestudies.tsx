@@ -1,4 +1,3 @@
-"use client"
 import React, { useState, useEffect, useRef } from "react";
 import Results from "../atoms/Results";
 
@@ -298,21 +297,21 @@ const CaseStudies = () => {
   };
 
   return (
-    <section className="w-full py-16 px-2 md:px-0 bg-[#FCFCFC] relative">
+    <section className="w-full py-16 px-2 md:px-0 bg-teal-50 relative">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <div className="text-center mb-8">
-          <div className="text-[#E74177] text-sm font-semibold tracking-widest mb-2" style={{ letterSpacing: 2 }}>OUR</div>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-[#3A0E6D] mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Case Studies</h2>
+          <div className="text-teal-800 text-sm font-semibold tracking-widest mb-2" style={{ letterSpacing: 2 }}>OUR</div>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-teal-950 mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Case Studies</h2>
         </div>
         <div className="relative w-full flex items-center justify-center min-h-[600px]">
           {/* Left Arrow */}
           <button
-            className="absolute left-0 md:-left-8 top-1/2 z-20 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg hover:bg-[#FCE4EC] transition-colors disabled:opacity-40"
+            className="absolute left-0 md:-left-8 top-1/2 z-20 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg hover:bg-teal-100 transition-colors disabled:opacity-40"
             onClick={goLeft}
             aria-label="Previous"
             style={{ transform: 'translateY(-50%)' }}
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#E74177" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#0E5964" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </button>
           {/* Carousel Content */}
           <div className="w-full max-w-7xl mx-auto relative min-h-[1000px] overflow-visible">
@@ -344,12 +343,12 @@ const CaseStudies = () => {
           </div>
           {/* Right Arrow */}
           <button
-            className="absolute right-0 md:-right-8 top-1/2 z-20 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg hover:bg-[#FCE4EC] transition-colors disabled:opacity-40"
+            className="absolute right-0 md:-right-8 top-1/2 z-20 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg hover:bg-teal-100 transition-colors disabled:opacity-40"
             onClick={goRight}
             aria-label="Next"
             style={{ transform: 'translateY(-50%)' }}
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#E74177" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#0E5964" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </button>
         </div>
       </div>

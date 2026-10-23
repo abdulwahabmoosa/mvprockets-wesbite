@@ -1,4 +1,3 @@
-"use client"
 import React, { useState, useRef, useEffect } from "react";
 import Reviewer from "../atoms/Reviewer";
 
@@ -103,11 +102,11 @@ const OurClients = () => {
   }, [isTransitioning]);
 
   return (
-    <section className="w-full bg-[#3A0E6D] py-20 font-montserrat overflow-x-hidden">
+    <section className="w-full bg-teal-950 py-20 font-montserrat overflow-x-hidden">
       <div className="max-w-5xl mx-auto px-4 flex flex-col items-center">
         {/* Section Header */}
         <div className="flex flex-col items-center mb-12">
-          <div className="text-[#E74177] text-2xl md:text-3xl font-extrabold tracking-widest mb-2 uppercase" style={{ letterSpacing: 2 }}>
+          <div className="text-teal-300 text-2xl md:text-3xl font-extrabold tracking-widest mb-2 uppercase" style={{ letterSpacing: 2 }}>
             OUR
           </div>
           <h2 className="text-3xl md:text-5xl font-extrabold text-white text-center mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>
@@ -118,13 +117,13 @@ const OurClients = () => {
         <div className="relative w-full flex items-center justify-center min-h-[420px]">
           {/* Left Arrow */}
           <button
-            className="absolute left-0 md:-left-16 z-20 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg hover:bg-[#FCE4EC] transition-colors"
+            className="absolute left-0 md:-left-16 z-20 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg hover:bg-teal-100 transition-colors"
             onClick={goLeft}
             aria-label="Previous"
             style={{ top: '50%', transform: 'translateY(-50%)' }}
             disabled={isTransitioning}
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#E74177" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#0E5964" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </button>
           {/* Carousel Content */}
           <div className="w-full max-w-xs md:max-w-4xl lg:max-w-6xl mx-auto relative overflow-x-hidden">
@@ -154,7 +153,7 @@ const OurClients = () => {
                       >
                         {review.name}
                       </a>
-                      <span className="text-sm md:text-base font-medium text-[#B9A9D0]" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                      <span className="text-sm md:text-base font-medium text-nav-text" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                         {review.role}
                       </span>
                     </div>
@@ -171,13 +170,13 @@ const OurClients = () => {
           </div>
           {/* Right Arrow */}
           <button
-            className="absolute right-0 md:-right-16 z-20 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg hover:bg-[#FCE4EC] transition-colors"
+            className="absolute right-0 md:-right-16 z-20 w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-lg hover:bg-teal-100 transition-colors"
             onClick={goRight}
             aria-label="Next"
             style={{ top: '50%', transform: 'translateY(-50%)' }}
             disabled={isTransitioning}
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#E74177" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="#0E5964" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/></svg>
           </button>
         </div>
       </div>

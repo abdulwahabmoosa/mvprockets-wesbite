@@ -6,7 +6,7 @@ export default function ContactUsPage() {
   return (
     <>
       {/* Purple Header */}
-      <section className="w-full bg-[#3A0E6D] py-16 px-4 text-center">
+      <section className="w-full bg-teal-950 py-16 px-4 text-center">
         <h1 className="text-white text-5xl md:text-6xl font-extrabold mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           Contact Us
         </h1>

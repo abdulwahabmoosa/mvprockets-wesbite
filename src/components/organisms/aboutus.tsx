@@ -1,11 +1,10 @@
-import Image from 'next/image';
 
 const aboutText = `A leading product studio enabling startups & businesses transform their vision into product reality. We believe technology is a major force multiplier for mankind. We make it easier for businesses to leverage technology to solve large problems. Innovation is what we are awesome at. And we channel it to our product development, resulting in amazing products & outcomes!`;
 
 const AboutUs = () => (
   <section className="w-full">
     {/* Section 1: Who We Are (purple bg) */}
-    <div className="w-full bg-[#3A0E6D] pt-10 md:pt-16 pb-32 md:pb-16 px-4 text-center">
+    <div className="w-full bg-teal-950 pt-10 md:pt-16 pb-32 md:pb-16 px-4 text-center">
       <h1 className="text-white text-3xl md:text-5xl font-extrabold mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
         Who We Are?
       </h1>
@@ -28,20 +27,19 @@ const AboutUs = () => (
           }}
         >
           <div className="relative w-full">
-            <Image
+            <img
               src="/design/man-wearing-white-long-sleeved-shirt-holding-black-pen-3182781-e1717483845436.png"
               alt="Team meeting"
               width={400}
               height={200}
               className="w-full max-w-md mx-auto h-auto object-cover"
-              priority
             />
           </div>
           <div className="w-full bg-white border-t border-white px-4 py-6 text-center">
-            <h2 className="text-[#3A0E6D] text-2xl font-extrabold mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <h2 className="text-teal-950 text-2xl font-extrabold mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               About MVPRockets
             </h2>
-            <p className="text-gray-600 text-lg font-medium leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+            <p className="text-muted text-lg font-medium leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               {aboutText}
             </p>
           </div>
@@ -61,13 +59,12 @@ const AboutUs = () => (
             maxWidth: '90vw'
           }}
         >
-          <Image
+          <img
             src="/design/man-wearing-white-long-sleeved-shirt-holding-black-pen-3182781-e1717483845436.png"
             alt="Team meeting"
             width={1200}
             height={450}
             className="w-full h-auto object-cover"
-            priority
           />
         </div>
       </div>
@@ -82,10 +79,10 @@ const AboutUs = () => (
             maxWidth: '80vw'
           }}
         >
-          <h2 className="text-[#3A0E6D] text-4xl font-extrabold mt-8 mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <h2 className="text-teal-950 text-4xl font-extrabold mt-8 mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             About MVPRockets
           </h2>
-          <p className="text-gray-600 text-lg font-medium leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+          <p className="text-muted text-lg font-medium leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             {aboutText}
           </p>
         </div>

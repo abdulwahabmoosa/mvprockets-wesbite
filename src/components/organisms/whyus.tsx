@@ -1,4 +1,3 @@
-"use client"
 import React, { useEffect, useState, useRef } from "react";
 import FeatureCard from "../atoms/FeatureCard";
 
@@ -100,7 +99,7 @@ export const WhyUs = () => {
   return (
     <section 
       ref={sectionRef}
-      className="relative w-full py-8 md:py-16 px-3 md:px-16 bg-white overflow-hidden border-t border-[#E74177]/30"
+      className="relative w-full py-8 md:py-16 px-3 md:px-16 bg-white overflow-hidden border-t border-teal-800/30"
     >
       {/* Blue dots top left, responsive: small circle on mobile, square grid on desktop */}
       <div className="absolute left-0 top-0 z-0">
@@ -114,7 +113,7 @@ export const WhyUs = () => {
         >
           {Array.from({ length: 3 }).map((_, row) => (
             Array.from({ length: 3 }).map((_, col) => (
-              <circle key={row + '-' + col} cx={col * 16 + 8} cy={row * 16 + 8} r="3" fill="#E0E7FF" />
+              <circle key={row + '-' + col} cx={col * 16 + 8} cy={row * 16 + 8} r="3" fill="#D5ECEE" />
             ))
           ))}
         </svg>
@@ -128,15 +127,15 @@ export const WhyUs = () => {
         >
           {Array.from({ length: 5 }).map((_, row) => (
             Array.from({ length: 5 }).map((_, col) => (
-              <circle key={row + '-' + col} cx={col * 22 + 8} cy={row * 22 + 8} r="4" fill="#E0E7FF" />
+              <circle key={row + '-' + col} cx={col * 22 + 8} cy={row * 22 + 8} r="4" fill="#D5ECEE" />
             ))
           ))}
         </svg>
       </div>
       <div className="relative z-10 max-w-6xl mx-auto flex flex-col items-center">
         <div className="text-center mb-8 md:mb-12">
-          <div className="text-2xl md:text-xl text-[#E74177] font-semibold tracking-widest mb-2" style={{ letterSpacing: 2 }}>MVPROCKETS</div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#3A0E6D] mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Why Us?</h2>
+          <div className="text-2xl md:text-xl text-teal-800 font-semibold tracking-widest mb-2" style={{ letterSpacing: 2 }}>MVPROCKETS</div>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-teal-950 mb-2" style={{ fontFamily: 'Montserrat, sans-serif' }}>Why Us?</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 md:gap-x-12 gap-y-4 md:gap-y-10 w-full">
           {features.map((f, i) => (
@@ -153,7 +152,7 @@ export const WhyUs = () => {
                 icon={f.icon}
                 title={f.title}
                 text={f.desc}
-                iconBg="bg-[#E74177] w-14 h-14 rounded-[26px] md:w-12 md:h-12 md:rounded-full flex items-center justify-center"
+                iconBg="bg-teal-800 w-14 h-14 rounded-[26px] md:w-12 md:h-12 md:rounded-full flex items-center justify-center"
                 iconClassName="w-4 h-4 md:w-6 md:h-6"
                 className="!items-start"
               />

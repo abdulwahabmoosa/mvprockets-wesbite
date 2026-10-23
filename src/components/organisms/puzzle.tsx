@@ -1,4 +1,3 @@
-"use client";
 import React, { useState, useEffect, useRef } from "react";
 
 const puzzleData = [
@@ -162,7 +161,7 @@ const Puzzle: React.FC = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="w-full bg-[#3A0E6D]">
+    <section ref={sectionRef} className="w-full bg-teal-950">
       {/* Main Container - Controls overall spacing */}
       <div className="w-full px-4 md:px-8 mx-auto pt-6 pb-8 md:pt-16 md:pb-32">
         
@@ -249,7 +248,7 @@ const Puzzle: React.FC = () => {
                       <div className="relative flex items-center justify-center mb-1 -ml-4">
                         {/* Purple Circle Background */}
                         <div 
-                          className="absolute rounded-full bg-[#3A0E6D] z-10 flex items-center justify-center"
+                          className="absolute rounded-full bg-teal-950 z-10 flex items-center justify-center"
                           style={{
                             left: item.iconPosition.x,
                             top: item.iconPosition.y,
